@@ -1,0 +1,13 @@
+torch
+torchvision
+segmentation-models-pytorch
+albumentations
+torchmetrics
+wandb
+grad-cam
+opencv-python
+numpy
+pandas
+matplotlib
+pyyaml
+jupyter

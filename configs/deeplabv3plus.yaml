@@ -1,0 +1,23 @@
+# Faz 3 karsilastirma config (placeholder degerler - Faz 3'te ayarlanacak)
+data:
+  category: hazelnut
+  raw_dir: data/raw
+  processed_dir: data/processed
+  image_size: 256
+
+model:
+  name: deeplabv3plus
+  encoder: resnet34
+  encoder_weights: imagenet
+
+train:
+  batch_size: 8
+  epochs: 50
+  lr: 0.0001
+  loss: combo_bce_dice
+  seed: 42
+
+logging:
+  wandb_project: defect-segmentation
+  checkpoint_dir: outputs/checkpoints
+  log_dir: outputs/logs

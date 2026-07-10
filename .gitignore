@@ -1,0 +1,25 @@
+# Veri
+data/raw/*
+!data/raw/.gitkeep
+!data/raw/NOTES.md
+data/processed/*
+!data/processed/.gitkeep
+
+# Egitim ciktilari
+outputs/checkpoints/*
+!outputs/checkpoints/.gitkeep
+outputs/logs/*
+!outputs/logs/.gitkeep
+outputs/predictions/*
+!outputs/predictions/.gitkeep
+*.pt
+*.pth
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Ortam
+.venv/
+venv/
