@@ -106,9 +106,6 @@ Daha derin bir XAI analizi için [notebooks/explainability.ipynb](notebooks/expl
 - Test split'i 23 görsel ile küçük — metrikler örneklem gürültüsüne duyarlı, güven aralığı raporlanmadı.
 - Grad-CAM tek bir encoder katmanından (`layer4`) alındı; çok ölçekli bir yorumlanabilirlik analizi yapılmadı.
 
-## CV Cümlesi
-
-> "MVTec AD (hazelnut) veri setinde U-Net ve DeepLabV3+ mimarilerini (ResNet34 encoder) karşılaştırarak piksel-seviyesi endüstriyel yüzey kusuru segmentasyonu gerçekleştirdim; %87 validation Dice skoru elde ettim, Grad-CAM ile model yorumlanabilirliğini ve başarısız örnek profilini analiz ettim."
 
 ## Kaynak
 
