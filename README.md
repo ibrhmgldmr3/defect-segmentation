@@ -35,6 +35,8 @@ python src/visualize.py --config configs/unet_baseline.yaml  # Faz 4
 python src/visualize.py --config configs/deeplabv3plus.yaml  # Faz 4
 ```
 
+Uçtan uca tek görsel demosu (görsel → model → tahmin → Grad-CAM) için: [notebooks/pipeline_demo.ipynb](notebooks/pipeline_demo.ipynb).
+
 ## Klasör Yapısı
 
 ```
@@ -55,6 +57,7 @@ defect-segmentation/
 │   └── deeplabv3plus.yaml
 ├── notebooks/
 │   ├── eda.ipynb              # Faz 1: split dagilimi, goruntu boyutu, maske piksel orani
+│   ├── pipeline_demo.ipynb    # Uctan uca: goruntu -> model -> tahmin -> Grad-CAM (XAI)
 │   └── explainability.ipynb   # Faz 4: CAM yontem karsilastirma, model karsilastirma, basarisiz ornek analizi
 ├── outputs/
 │   ├── checkpoints/             # {model}_best.pt (en iyi val Dice)
@@ -105,8 +108,3 @@ Daha derin bir XAI analizi için [notebooks/explainability.ipynb](notebooks/expl
 - Resmi `train/good` havuzundan sadece 60 ek negatif örnek kullanıldı; tüm 391 görsel kullanılsaydı negatif/pozitif dengesi ve genelleme farklı çıkabilirdi.
 - Test split'i 23 görsel ile küçük — metrikler örneklem gürültüsüne duyarlı, güven aralığı raporlanmadı.
 - Grad-CAM tek bir encoder katmanından (`layer4`) alındı; çok ölçekli bir yorumlanabilirlik analizi yapılmadı.
-
-
-## Kaynak
-
-Bu proje, [cv-projeleri-plani.md](../cv-projeleri-plani.md) dosyasındaki Proje 1 planına göre yapılandırılmıştır.
